@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leonardo Survey Form</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <h1 id="title" class="title">Web form</h1>
+    <p id="description" class="description">
+      Please fill out this form to continue to your gift
+    </p>
+    >
+
+    <form action="" id="survey-form" class="form">
+      <div class="form-section">
+        <label for="name-label" id="name-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          class="input-text"
+          placeholder=" Insert your name"
+          required
+        />
+      </div>
+
+      <div class="form-section">
+        <label for="email" id="email-label" class="email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="input-text"
+          placeholder=" Insert your email"
+          required
+        />
+      </div>
+
+      <div class="form-section">
+        <label for="" id="number-label" class="number-label">Age</label>
+        <input
+          type="number"
+          id="number"
+          class="input-text"
+          placeholder=" Age"
+          min="16"
+          max="99"
+          required
+        />
+      </div>
+
+      <div class="form-section">
+        <p>Select your Profession</p>
+        <p>
+          <select id="dropdown" class="dropdown">
+            <option value="1">Driver</option>
+            <option value="2">Programmer</option>
+            <option value="3">Marketer</option>
+            <option value="4">Waitress</option>
+          </select>
+        </p>
+      </div>
+
+      <div class="form-section radio-label">
+        <p class="gender">Please choose your gender</p>
+        <label for="male">
+          <input type="radio" id="male" name="sex" value="male" /> Male
+        </label>
+        <label for="female">
+          <input type="radio" id="female" name="sex" value="female" /> Female
+        </label>
+        <label for="other">
+          <input type="radio" id="other" name="sex" value="other" /> Other
+        </label>
+      </div>
+
+      <div class="form-section checkbox-label">
+        <p>What type of newsletter do you want to receive from us?</p>
+        <label for="all">
+          <input type="checkbox" id="all" class="checkbox" value="all-email" />
+          All email
+        </label>
+        <label for="news">
+          <input
+            type="checkbox"
+            id="news"
+            class="checkbox"
+            value="recent-news"
+          />
+          Recent news
+        </label>
+        <label for="none">
+          <input type="checkbox" id="none" class="checkbox" value="none" /> No
+          email
+        </label>
+      </div>
+
+      <div class="form-section">
+        <p>Do you have any comments?</p>
+        <textarea
+          name="comments"
+          id="comments"
+          cols="30"
+          rows="1"
+          placeholder=" Enter your text here"
+        ></textarea>
+      </div>
+
+      <div class="form-section">
+        <input type="submit" id="submit" class="submit" />
+      </div>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
